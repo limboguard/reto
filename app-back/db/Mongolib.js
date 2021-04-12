@@ -1,8 +1,7 @@
 const MongoClient = require("mongodb").MongoClient;
 const assert = require("assert");
 
-const url =
-  "mongodb+srv://user:user@reto.dgcdz.mongodb.net/Job?retryWrites=true&w=majority";
+const url = process.env.REACT_APP_MONGOURL;
 
 const dbName = "Job";
 
